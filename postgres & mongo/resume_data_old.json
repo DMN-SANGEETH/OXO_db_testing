@@ -1,0 +1,419 @@
+{
+  "first_name": "Nishan",
+  "last_name": "Sangeeth",
+  "name": "NISHAN SANGEETH",
+  "email": "dmnsangeeth@gmail.com",
+  "linkedin_url": "https://www.linkedin.com/in/dmn-sangeeth",
+  "phone": "+9476-581-4022",
+  "summary": "An enthusiastic Information Technology professional, who is passionate about learning new things and applying them in practical scenarios to make an advancement in people's lives.",
+  "skills": [
+    {
+      "name": "Python",
+      "rating": 10,
+      "evidence": "Implemented RAG chatbot, ComfyUI workflows, data preprocessing with Pandas/OpenCV, developed neural networks, RNN-LSTM, BERT, DeepFace, Word2Vec, NLTK. Used extensively across all AI/ML roles and numerous projects."
+    },
+    {
+      "name": "Java",
+      "rating": 5,
+      "evidence": "Assisted with full-stack web application, leveraging Spring Boot for backend at Entgra (Pvt) Ltd."
+    },
+    {
+      "name": "HTML",
+      "rating": 4,
+      "evidence": "Implied knowledge for full-stack web development with React frontend, listed in skills."
+    },
+    {
+      "name": "JavaScript",
+      "rating": 6,
+      "evidence": "Used with React for dynamic frontend development at Entgra (Pvt) Ltd and listed in the 'Document Question & Answering System' project."
+    },
+    {
+      "name": "SQL",
+      "rating": 2,
+      "evidence": "Listed only in the skills section with no explicit evidence of practical use in work experience or projects."
+    },
+    {
+      "name": "Azure",
+      "rating": 7,
+      "evidence": "Leveraged Azure ML studio for model deployment at Aizenit (Pvt) Ltd and holds a 'Deploy containers by using Azure Kubernetes Service' certification."
+    },
+    {
+      "name": "Anaconda Navigator",
+      "rating": 5,
+      "evidence": "Listed as a developer tool; commonly used for Python-based data science and machine learning, implying practical use in AI/ML roles."
+    },
+    {
+      "name": "Jupyter Notebook",
+      "rating": 5,
+      "evidence": "Listed as a developer tool; commonly used for Python-based data science and machine learning, implying practical use in AI/ML roles."
+    },
+    {
+      "name": "Spyder",
+      "rating": 5,
+      "evidence": "Listed as a developer tool; commonly used for Python development, implying practical use in AI/ML roles."
+    },
+    {
+      "name": "Orange 3",
+      "rating": 5,
+      "evidence": "Listed as a developer tool; data visualization and machine learning tool, implying practical use."
+    },
+    {
+      "name": "VS Code",
+      "rating": 4,
+      "evidence": "Listed as a developer tool; commonly used IDE for various programming languages, implying general development use."
+    },
+    {
+      "name": "Postman",
+      "rating": 6,
+      "evidence": "Utilized for API testing and validation during the Software Engineer Internship at Entgra (Pvt) Ltd."
+    },
+    {
+      "name": "NetBeans",
+      "rating": 4,
+      "evidence": "Listed as a developer tool; commonly used IDE, implying general development use, possibly with Java."
+    },
+    {
+      "name": "IntelliJ IDE",
+      "rating": 4,
+      "evidence": "Listed as a developer tool; commonly used IDE, implying general development use, possibly with Java/Spring Boot."
+    },
+    {
+      "name": "Adobe Photoshop",
+      "rating": 2,
+      "evidence": "Listed only in the skills section with no explicit evidence of practical use in work experience or projects."
+    },
+    {
+      "name": "Google Cloud Platform",
+      "rating": 2,
+      "evidence": "Listed only in the skills section with no explicit evidence of practical use in work experience or projects."
+    },
+    {
+      "name": "Linux/Ubuntu",
+      "rating": 7,
+      "evidence": "Used Linux server as a working environment (Freelancing) and for development with Raspberry Pi (Valosens - Flix11 (Pvt) Ltd)."
+    },
+    {
+      "name": "TensorFlow",
+      "rating": 8,
+      "evidence": "Performed tests with TensorFlow Lite and YOLO models (Valosens), used in 'Diagnosis Of Heart Patients' and 'Face-mask-classification' projects, and implied by 'Neural Networks and Deep Learning' certification."
+    },
+    {
+      "name": "Keras",
+      "rating": 7,
+      "evidence": "Used in 'Diagnosis Of Heart Patients' and 'Face-mask-classification' projects for building neural networks."
+    },
+    {
+      "name": "PyTorch",
+      "rating": 3,
+      "evidence": "Listed in skills, but no explicit mention of practical application in work experience or projects."
+    },
+    {
+      "name": "FastAPI",
+      "rating": 7,
+      "evidence": "Created web applications and integrated a neural network into a FastAPI backend for the 'Diagnosis Of Heart Patients' project."
+    },
+    {
+      "name": "Spring Boot",
+      "rating": 6,
+      "evidence": "Leveraged for backend development in a full-stack web application during the Software Engineer Internship at Entgra (Pvt) Ltd."
+    },
+    {
+      "name": "React",
+      "rating": 8,
+      "evidence": "Developed dynamic frontend for a full-stack web application at Entgra (Pvt) Ltd, and used in 'Diagnosis Of Heart Patients' and 'Document Question & Answering System' projects."
+    },
+    {
+      "name": "Firebase",
+      "rating": 5,
+      "evidence": "Listed as a technology used in the 'Diagnosis Of Heart Patients Using Deep Neural Network' project."
+    },
+    {
+      "name": "GitHub (Git)",
+      "rating": 8,
+      "evidence": "Used as a version control system across Freelancing, Aizenit (Pvt) Ltd, and Entgra (Pvt) Ltd for collaboration and task management."
+    },
+    {
+      "name": "Sinhala",
+      "rating": 8,
+      "evidence": "Listed as a language, implying proficiency for professional communication."
+    },
+    {
+      "name": "English",
+      "rating": 8,
+      "evidence": "Listed as a language, implying proficiency for professional communication in a global context."
+    },
+    {
+      "name": "Problem-solving",
+      "rating": 7,
+      "evidence": "Implied by successfully implementing complex AI/ML solutions and developing applications across various projects and roles."
+    },
+    {
+      "name": "Teamwork",
+      "rating": 7,
+      "evidence": "Collaborated with team members at Aizenit (Pvt) Ltd and Entgra (Pvt) Ltd using Git for version control and task assignment."
+    },
+    {
+      "name": "Leadership",
+      "rating": 7,
+      "evidence": "Listed as a soft skill and involved in student societies, implying leadership potential and experience."
+    },
+    {
+      "name": "Adaptability",
+      "rating": 7,
+      "evidence": "Demonstrated by working with diverse technologies, frameworks, and roles (AI/ML, Computer Vision, Full-stack) in different environments."
+    },
+    {
+      "name": "Fast learning ability",
+      "rating": 7,
+      "evidence": "Implied by rapid acquisition and application of new AI/ML techniques and tools across various projects and short-term roles."
+    },
+    {
+      "name": "Collaboration",
+      "rating": 7,
+      "evidence": "Collaborated with team members at Aizenit (Pvt) Ltd and Entgra (Pvt) Ltd, using Git for version control."
+    },
+    {
+      "name": "Flexibility",
+      "rating": 7,
+      "evidence": "Implied by working across diverse projects, technologies, and roles, including freelancing."
+    },
+    {
+      "name": "Generative AI",
+      "rating": 9,
+      "evidence": "Developed ComfyUI workflows for vid2vid, txt2img, txt2vid; experienced with SDXL Lightning and SD1.5 (Freelancing); holds 'Generative AI and LLMs: Architecture and Data Preparation' certification."
+    },
+    {
+      "name": "Large Language Models (LLMs) / RAG",
+      "rating": 9,
+      "evidence": "Implemented RAG-based chatbot with LangChain and OpenAI API (Freelancing); utilized Llama2 and Faiss vectorDB for RAG system (Aizenit); 'Document Question & Answering System' project; 'Generative AI and LLMs: Architecture and Data Preparation' certification."
+    },
+    {
+      "name": "Computer Vision",
+      "rating": 10,
+      "evidence": "Acquired Depth image, Edge detection, skeleton detection (Freelancing); LiDAR depth maps, point cloud generation, YOLO models (Valosens); YOLOv8, Ultralytics (Aizenit); CNN, OpenCV, Deep-Face, VGG-Face (Projects)."
+    },
+    {
+      "name": "Machine Learning",
+      "rating": 10,
+      "evidence": "Extensive experience in AI/ML Engineer roles; applied TensorFlow, Keras, YOLO, BERT, RNN-LSTM, CNN; holds 'Supervised Machine Learning: Regression and Classification' certification."
+    },
+    {
+      "name": "Deep Learning",
+      "rating": 10,
+      "evidence": "Designed and implemented CNNs, RNN-LSTMs, BERT models in projects; foundational for 'Neural Networks and Deep Learning' certification; applied various deep learning frameworks like TensorFlow and Keras."
+    },
+    {
+      "name": "HuggingFace",
+      "rating": 8,
+      "evidence": "Experienced with Huggingface models for depth, edge, and skeleton detection (Freelancing); utilized Transformers and BERT (Aizenit & Projects)."
+    },
+    {
+      "name": "LangChain",
+      "rating": 7,
+      "evidence": "Implemented a RAG-based chatbot for gcore.com using LangChain and an OpenAI API (Freelancing)."
+    },
+    {
+      "name": "OpenAI API",
+      "rating": 7,
+      "evidence": "Implemented a RAG-based chatbot using LangChain and an OpenAI API (Freelancing)."
+    },
+    {
+      "name": "ComfyUI",
+      "rating": 7,
+      "evidence": "Developed workflows for vid2vid, txt2img, and txt2vid with Generative AI techniques (Freelancing)."
+    },
+    {
+      "name": "SDXL Lightning / SD1.5",
+      "rating": 6,
+      "evidence": "Gained experience by working with SDXL Lightning and SD1.5 for generative AI tasks (Freelancing)."
+    },
+    {
+      "name": "LiDAR",
+      "rating": 6,
+      "evidence": "Obtained experience with LiDAR depth maps and generated depth images datasets (Valosens - Flix11 (Pvt) Ltd)."
+    },
+    {
+      "name": "YOLO",
+      "rating": 7,
+      "evidence": "Performed tests with TensorFlow Lite and YOLO models (Valosens); gained hands-on experience with YOLOv8 (Aizenit)."
+    },
+    {
+      "name": "Llama2",
+      "rating": 7,
+      "evidence": "Utilized Llama2 to create a document-based RAG system (Aizenit) and for the 'Document Question & Answering System' project."
+    },
+    {
+      "name": "Faiss",
+      "rating": 7,
+      "evidence": "Utilized Faiss vectorDB to create a document-based RAG system (Aizenit) and for the 'Document Question & Answering System' project."
+    },
+    {
+      "name": "ONNX",
+      "rating": 6,
+      "evidence": "Gained hands-on experience with ONNX (Aizenit (Pvt) Ltd)."
+    },
+    {
+      "name": "BERT",
+      "rating": 7,
+      "evidence": "Gained hands-on experience with BERT (Aizenit); implemented a BERT Transformer model for a Question and Answer database (Project)."
+    },
+    {
+      "name": "Transformers",
+      "rating": 7,
+      "evidence": "Gained hands-on experience with Transformers (Aizenit); applied BERT Transformer model in a project."
+    },
+    {
+      "name": "Ant Design",
+      "rating": 6,
+      "evidence": "Implemented Ant Design for the frontend, enhancing user interface design at Entgra (Pvt) Ltd."
+    },
+    {
+      "name": "RESTful APIs",
+      "rating": 7,
+      "evidence": "Developed RESTful API endpoints for HTTP operations and utilized Postman for API testing and validation at Entgra (Pvt) Ltd."
+    },
+    {
+      "name": "Android Studio",
+      "rating": 5,
+      "evidence": "Demonstrated proficiency with Android Studio for thorough testing of mobile applications at Entgra (Pvt) Ltd."
+    },
+    {
+      "name": "Pandas",
+      "rating": 7,
+      "evidence": "Utilized a comprehensive ECG image dataset with Pandas for data preprocessing in the 'Diagnosis Of Heart Patients' project."
+    },
+    {
+      "name": "Numpy",
+      "rating": 6,
+      "evidence": "Used to save processed images as NumPy arrays in the 'Diagnosis Of Heart Patients' project, foundational for numerical operations in ML."
+    },
+    {
+      "name": "Matplotlib",
+      "rating": 5,
+      "evidence": "Listed as a technology used in the 'Diagnosis Of Heart Patients' project, commonly used for data visualization in ML/DL contexts."
+    },
+    {
+      "name": "OpenCV",
+      "rating": 8,
+      "evidence": "Used to convert images to grayscale, resize, and save for data preprocessing in 'Diagnosis Of Heart Patients'; also used in 'Face-classification'."
+    },
+    {
+      "name": "MobileNetV2",
+      "rating": 7,
+      "evidence": "Employed transfer learning with the MobileNetV2 model for 'Face-mask-classification-using-TransferLearning' project, achieving high accuracy."
+    },
+    {
+      "name": "RNN-LSTM",
+      "rating": 8,
+      "evidence": "Developed an RNN-LSTM Architecture for 'Stock-market-value-prediction-LSTM' and enhanced 'Fake-News-Classification' using LSTM."
+    },
+    {
+      "name": "Deep-Face / VGG-Face",
+      "rating": 7,
+      "evidence": "Used DeepFace and the VGG-Face model for image and individual classification in the 'Face-classification' project."
+    },
+    {
+      "name": "Word2Vec",
+      "rating": 6,
+      "evidence": "Used in the 'Fake-News-Classification' project for enhancing text data representation."
+    },
+    {
+      "name": "NLTK",
+      "rating": 7,
+      "evidence": "Used for data preprocessing by removing stopwords and applying Porter stemming in the 'Fake-News-Classification' project."
+    },
+    {
+      "name": "PorterStemmer",
+      "rating": 6,
+      "evidence": "Applied for stemming as part of NLTK preprocessing in the 'Fake-News-Classification' project."
+    }
+  ],
+  "experience": [
+    {
+      "title": "AI/ML Engineer",
+      "company": "Freelancing-upwork",
+      "duration": "Des 2023 - Present",
+      "description": "Implemented a RAG-based chatbot for gcore.com using LangChain and an OpenAI API, enabling step-by-step answers. Developed workflows for vid2vid, txt2img, and txt2vid with Generative AI techniques using ComfyUI. Gained experience with SDXL Lightning, SD1.5, and Huggingface models. Acquired Depth image, Edge detection, and skeleton detection using HuggingFace open-source models. Utilized a Linux server as a working environment and Git for version control systems."
+    },
+    {
+      "title": "Computer Vision Research Engineer",
+      "company": "Valosens - Flix11 (Pvt) Ltd",
+      "duration": "Jan 2024 - May 2024",
+      "description": "Obtained experience with LiDAR depth maps and generated depth images datasets. Generated point clouds using depth images and created a dataset for ML models to test human skeletons with subtracted point clouds, performing tests with TensorFlow Lite and YOLO models. Used Linux server and Raspberry Pi for development."
+    },
+    {
+      "title": "Intern AI/ML Engineer",
+      "company": "Aizenit (Pvt) Ltd",
+      "duration": "Νου 2023 – Jan 2024",
+      "description": "Utilized Llama2 and Faiss vectorDB to create a document-based RAG system named chat-genie-inference. Gained hands-on experience with ONNX, BERT, YOLOv8, Transformers, and Flask API. Implemented a model by Ultralytics for table column detection and segmentation to facilitate data generation for LLMs. Collaborated with team members using Git for version control and leveraged Azure ML studio to streamline model deployment."
+    },
+    {
+      "title": "Software Engineer Intern",
+      "company": "Entgra (Pvt) Ltd",
+      "duration": "Feb 2023 - Aug 2023",
+      "description": "Assisted with full-stack web application development, leveraging Spring Boot for the backend and React for a dynamic frontend. Implemented Ant Design for the frontend, enhancing user interface and user experience. Developed RESTful API endpoints for HTTP operations and utilized Postman for API testing and validation. Gained expertise in metadata handling, allowing users to view and manipulate data with precision. Demonstrated proficiency with Android Studio for thorough testing of mobile applications. Collaborated with team members using version control systems such as Git to organize modifications and assign tasks."
+    }
+  ],
+  "total_experience": [
+    {
+      "years": "2 years 11 months",
+      "description": "Over 2 years and 11 months of experience across various roles including AI/ML Engineering, Computer Vision Research, and Software Engineering. Engaged in freelancing as an AI/ML Engineer, contributed to computer vision research at Valosens, gained intern experience in AI/ML at Aizenit, and worked as a Software Engineer Intern at Entgra. This experience covers a wide range of technologies from generative AI and LLMs to full-stack web development."
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Computing",
+      "institution": "Wrexham Glyndwr University",
+      "year": "Feb. 2024"
+    },
+    {
+      "degree": "Information Technology Diplomate",
+      "institution": "Institute of Technology University of Moratuwa | ITUM",
+      "year": "Feb. 2023"
+    }
+  ],
+  "certifications": [
+    "Generative AI and LLMs: Architecture and Data Preparation | IBM | Nov 2024",
+    "Deploy containers by using Azure Kubernetes Service | Microsoft | Nov 2024",
+    "Neural Networks and Deep Learning | DeepLearning.ai | Oct 2024",
+    "Supervised Machine Learning: Regression and Classification | DeepLearning.ai | Oct 2024",
+    "Python for Beginners | Open Learning Platform - University of Moratuwa | Oct 2022",
+    "Scrum foundation professional | SFPC | Nov 2022"
+  ],
+  "other_qualifications": "Nishan holds a Bachelor of Computing from Wrexham Glyndwr University and an Information Technology Diplomate from the Institute of Technology University of Moratuwa. Additionally, Nishan is certified in Generative AI and LLMs, Azure Kubernetes Service, Neural Networks and Deep Learning, Supervised Machine Learning, Python for Beginners, and Scrum Foundation Professional, demonstrating a strong foundation in both academic and practical IT and AI/ML principles.",
+  "projects": [
+    {
+      "name": "Diagnosis Of Heart Patients Using Deep Neural Network",
+      "description": "Created web applications using CNN, Python, FastAPI, and React to predict whether a person has heart disease. Processed user-inputted information in the back-end to return a subtotal prediction based on ECG Image input. Utilized a comprehensive ECG image dataset with Pandas and OpenCV to convert images to grayscale, resize, and save as NumPy arrays. Designed a neural network with sigmoid activation and integrated it into a FastAPI backend, gaining skills in deep learning and full-stack development. (Technologies: Python, React, CNN, Pandas, Keras, Tensorflow, Numpy, Matplotlib, OpenCV, Fast API, Firebase)"
+    },
+    {
+      "name": "Document Question & Answering System",
+      "description": "An ongoing project utilizing RAG with a Llama2 model to develop a document question and answering website. (Technologies: Python, Llama2, Faiss, RAG, Flask, React, JavaScript)"
+    },
+    {
+      "name": "Face-mask-classification",
+      "description": "Utilized Convolutional Neural Networks (CNNs) to swiftly and accurately identify mask-wearing individuals. Created a model achieving over 90% accuracy. (Technologies: Python, Keras, Tensorflow)"
+    },
+    {
+      "name": "Face-mask-classification-using-TransferLearning",
+      "description": "Employed transfer learning with the MobileNetV2 model, achieving remarkable accuracy surpassing 92% in face mask classification. (Technologies: Python, CNN, MobileNetV2)"
+    },
+    {
+      "name": "Stock-market-value-prediction-LSTM",
+      "description": "Developed an RNN-LSTM Architecture with Python to forecast future market opening values and provide actionable insights. (Technologies: Python, RNN-LSTM)"
+    },
+    {
+      "name": "Question-and-Answering-system",
+      "description": "Implemented a state-of-the-art BERT Transformer model to enhance a Question and Answer database by automating answer generation. Trained the model to provide accurate responses to user queries. (Technologies: Python, BERT)"
+    },
+    {
+      "name": "Face-classification",
+      "description": "Utilized DeepFace and the VGG-Face model to provide users with an easy-to-use interface for classifying images and individuals. Deployed for real-time classification and continuously improved for better results. (Technologies: Python, Deep-Face, VGG-Face, OpenCV)"
+    },
+    {
+      "name": "Fake-News-Classification",
+      "description": "Enhanced classification using LSTM and one-hot encoding. Preprocessed data with NLTK by removing stopwords and applying Porter stemming. The model achieved a strong 91% accuracy in distinguishing between fake and genuine news. (Technologies: Python, Word2Vec, nltk, PorterStemmer)"
+    }
+  ],
+  "is_valid_resume": true
+}

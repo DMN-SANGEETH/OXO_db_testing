@@ -1,0 +1,52 @@
+{
+  "discipline": "Artificial Intelligence",
+  "career_path": "Technical Individual Contributor -> Senior AI Engineer -> AI Architect/Lead",
+  "designation": "AI/ML Engineer",
+  "vacancy_title": "AI/ML Engineer - Generative AI & Computer Vision",
+  "preferred_industry": ["Technology", "Software Development", "Healthcare AI", "Research & Development"],
+  "description": "We are seeking a passionate AI/ML Engineer to design, build, and deploy state-of-the-art machine learning models. Your focus will be on pioneering projects in Generative AI and Computer Vision, taking them from concept to production at our cutting-edge AI lab.",
+  "scheduled_date": "2024-05-15",
+  "expiration_date": "2024-06-15",
+  "vacancy_link": "https://innovateailabs.com/careers/ai-ml-engineer-2024",
+  "company_details": "InnovateAI Labs is a leader in developing cutting-edge AI research for transformative healthcare and industry solutions. We build intelligent systems that solve real-world problems.",
+  "compulsory_skills": [
+    "Python",
+    "PyTorch or TensorFlow",
+    "Generative AI",
+    "HuggingFace models",
+    "Transformers",
+    "Computer Vision",
+    "OpenCV",
+    "SD1.5",
+    "Git",
+    "Problem-solving"
+  ],
+  "nice_to_have_skills": [
+    "LangChain",
+    "OpenAI API",
+    "RAG",
+    "Fiass vectorDB",
+    "YOLOv8",
+    "ONNX",
+    "TensorFlow Lite",
+    "Fast API",
+    "Cloud computing basics (AWS/GCP/Azure)",
+    "Participation in Kaggle competitions or personal projects"
+  ],
+  "optional_skills": [
+    "SDXL Lightning",
+    "ComfyUI",
+    "vid2vid",
+    "txt2vid",
+    "Llama2",
+    "Azure",
+    "Linux",
+    "Docker",
+    "React",
+    "JavaScript",
+    "Full-stack developer"
+  ],
+  "preferred_experience": "2+ years of professional experience in developing and deploying machine learning models.",
+  "other_qualifications": "A Bachelor's or Master's degree in Computer Science, AI, or a related field. A strong portfolio (GitHub, Kaggle) is highly valued."
+}
+
