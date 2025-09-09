@@ -117,10 +117,21 @@ class EmbeddingGenerator:
             # Process each section with safe handling for None values
             sections = {
                 "summary": get_clean_text(resume_data.get("summary")),
-                "skills": ", ".join(resume_data.get("skills", [])),
+                # "skills": ", ".join(resume_data.get("skills", [])),
                 "certifications": ", ".join(resume_data.get("certifications", []))
                 # "total_experience": ", ".join(resume_data.get("total_experience"))
             }
+            
+            # Process experience
+            skills = ""
+            for ski in resume_data.get("skills", []):
+                if isinstance(ski, dict):
+                    name = get_clean_text(ski.get("name"))
+                    rating = get_clean_text(ski.get("rating"))
+                    description = get_clean_text(ski.get("description"))
+                    sub_skills = get_clean_text(ski.get("sub_skills"))
+                    skills += f"{name} rate for {rating}. {description} and {sub_skills}"
+            sections["skills"] = skills
             
             # Process experience
             experience_text = ""

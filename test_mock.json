@@ -1,0 +1,120 @@
+{
+  "first_name": "Jane",
+  "last_name": "Smith",
+  "name": "Jane Smith",
+  "email": "jane.smith@email.com",
+  "linkedin_url": "https://www.linkedin.com/in/janesmith",
+  "phone": "(555) 987-6543",
+  "summary": "Data scientist with 4 years of experience specializing in Natural Language Processing (NLP) and machine learning. Proficient in Python, with a strong background in developing and deploying models for text analysis and information retrieval.",
+  "skills": [
+    {
+      "name": "Python",
+      "rating": 9,
+      "description": "High-level proficiency demonstrated by leading development of complex NLP pipelines and building multiple models. Used in conjunction with several advanced libraries like PyTorch, Hugging Face, and spaCy.",
+      "sub_skills": [
+        "Data Science",
+        "Scripting",
+        "Machine Learning",
+        "Data Analysis"
+      ]
+    },
+    {
+      "name": "NLP",
+      "rating": 10,
+      "description": "Expert-level proficiency demonstrated by leading the development of a sentiment analysis pipeline and fine-tuning LLMs. The project section on 'Prompt Engineering Tool' also highlights deep, specialized knowledge in a very relevant and current subfield.",
+      "sub_skills": [
+        "LLMs",
+        "Prompt Engineering",
+        "Text Analysis",
+        "Information Retrieval",
+        "Sentiment Analysis",
+        "Tokenization"
+      ]
+    },
+    {
+      "name": "Machine Learning",
+      "rating": 9,
+      "description": "Extensive experience building and deploying various models, including for sentiment analysis and customer churn. Mentions use of specific libraries like Scikit-learn and PyTorch.",
+      "sub_skills": [
+        "Supervised Learning",
+        "Unsupervised Learning",
+        "Model Deployment",
+        "Model Training"
+      ]
+    },
+    {
+      "name": "PyTorch",
+      "rating": 8,
+      "description": "Used for building a text summarizer project and fine-tuning models. This demonstrates solid hands-on experience with the framework.",
+      "sub_skills": [
+        "Deep Learning",
+        "Neural Networks",
+        "Transformers"
+      ]
+    },
+    {
+      "name": "Hugging Face",
+      "rating": 8,
+      "description": "Specifically mentioned for fine-tuning large language models, indicating hands-on, advanced use of this critical NLP library.",
+      "sub_skills": [
+        "Transformers",
+        "LLMs",
+        "Model Fine-tuning"
+      ]
+    },
+    {
+      "name": "AWS S3",
+      "rating": 6,
+      "description": "Mentioned for data storage. While it's a key cloud service, the description doesn't detail complex use cases, justifying an intermediate rating.",
+      "sub_skills": [
+        "Cloud Storage",
+        "Data Management"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "title": "Data Scientist",
+      "company": "Innovate AI Labs",
+      "duration": "Feb 2022 – Present",
+      "description": "Led the development of an NLP pipeline for sentiment analysis of customer reviews, achieving 92% accuracy. Fine-tuned large language models (LLMs) from the Hugging Face library for specific domain tasks. Utilized AWS S3 for data storage and management."
+    },
+    {
+      "title": "Junior Data Scientist",
+      "company": "Quant Analytics Corp",
+      "duration": "Aug 2020 – Feb 2022",
+      "description": "Preprocessed and cleaned large-scale text datasets for various machine learning projects. Built and trained predictive models for customer churn analysis using Scikit-learn. Collaborated with engineering teams to deploy models into production environments."
+    }
+  ],
+  "total_experience": {
+    "years": "4 years 1 months",
+    "description": "Jane Smith has accumulated 4 years and 1 month of professional experience in data science, with a strong specialization in Natural Language Processing and machine learning. She has worked on projects involving sentiment analysis, LLM fine-tuning, and model deployment."
+  },
+  "education": [
+    {
+      "degree": "M.S. in Data Science",
+      "institution": "Stanford University",
+      "year": "2020"
+    },
+    {
+      "degree": "B.A. in Statistics",
+      "institution": "Harvard University",
+      "year": "2018"
+    }
+  ],
+  "certifications": [
+    "Google Cloud Certified Professional Data Engineer"
+  ],
+  "other_qualifications": "Jane holds a Master of Science in Data Science from Stanford University and a Bachelor of Arts in Statistics from Harvard University. Additionally, she is a Google Cloud Certified Professional Data Engineer.",
+  "projects": [
+    {
+      "name": "Prompt Engineering Tool",
+      "description": "A Python application that optimizes prompts for the Gemini API using few-shot and chain-of-thought techniques."
+    },
+    {
+      "name": "Text Summarizer",
+      "description": "A model built with PyTorch and transformers to generate concise summaries of articles."
+    }
+  ],
+  "is_valid_resume": true
+}

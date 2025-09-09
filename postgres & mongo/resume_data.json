@@ -1,0 +1,367 @@
+{
+  "first_name": "Nishan",
+  "last_name": "Sangeeth",
+  "name": "Nishan Sangeeth",
+  "email": "dmnsangeeth@gmail.com",
+  "linkedin_url": "https://www.linkedin.com/in/dmn-sangeeth",
+  "phone": "+9476-581-4022",
+  "summary": "An enthusiastic Information Technology professional, who is passionate about learning new things and applying them in practical scenarios to make an advancement in people's lives.",
+  "skills": [
+    {
+      "name": "Python",
+      "rating": 10,
+      "description": "Expert-level proficiency demonstrated by extensive and critical use across almost all AI/ML/CV projects and roles, involving a wide range of advanced libraries and frameworks like LangChain, TensorFlow, Keras, PyTorch, Llama2, BERT, Pandas, NumPy, and OpenCV."
+    },
+    {
+      "name": "Artificial Intelligence / Machine Learning / Deep Learning / Generative AI",
+      "rating": 10,
+      "description": "Expert-level understanding and practical application across all work experience and projects. Held an AI/ML Engineer role, developed RAG-based chatbots, created generative AI workflows (vid2vid, txt2img, txt2vid), fine-tuned Huggingface models, worked with LLMs (Llama2), and built various deep learning models (CNN, RNN-LSTM)."
+    },
+    {
+      "name": "LangChain",
+      "rating": 8,
+      "description": "Advanced proficiency demonstrated by implementing a RAG-based chatbot for gcore.com, indicating practical application and successful deployment of a complex AI system."
+    },
+    {
+      "name": "OpenAI API",
+      "rating": 7,
+      "description": "Advanced proficiency through practical application in implementing a RAG-based chatbot, indicating successful integration and utilization of the API."
+    },
+    {
+      "name": "ComfyUI",
+      "rating": 8,
+      "description": "Advanced proficiency demonstrated by developing complex generative AI workflows (vid2vid, txt2img, txt2vid), indicating hands-on experience with a specialized tool."
+    },
+    {
+      "name": "SDXL Lightning / SD1.5",
+      "rating": 6,
+      "description": "Intermediate proficiency based on mentioned experience in working with these generative AI models, likely in the context of developing ComfyUI workflows, indicating practical exposure."
+    },
+    {
+      "name": "Huggingface Models",
+      "rating": 8,
+      "description": "Advanced proficiency demonstrated by acquiring depth, edge, and skeleton detection using HuggingFace open-source models, indicating practical application and understanding of a key ML library for vision and NLP."
+    },
+    {
+      "name": "Linux/Ubuntu",
+      "rating": 7,
+      "description": "Advanced proficiency as a primary working environment in multiple roles (freelancing, Valosens), indicating comfortable navigation and system administration skills in a Linux environment."
+    },
+    {
+      "name": "Git",
+      "rating": 8,
+      "description": "Advanced proficiency demonstrated by consistent use in multiple work experiences (freelancing, Aizenit, Entgra) for version control and team collaboration."
+    },
+    {
+      "name": "Computer Vision",
+      "rating": 10,
+      "description": "Expert-level proficiency, indicated by a dedicated role as a Computer Vision Research Engineer and extensive involvement in projects like LiDAR depth mapping, point cloud generation, human skeleton detection, face mask classification, and face classification using Deep-Face and VGG-Face."
+    },
+    {
+      "name": "TensorFlow Lite",
+      "rating": 6,
+      "description": "Intermediate proficiency demonstrated by performing tests with TensorFlow Lite, indicating practical application for model deployment on edge devices."
+    },
+    {
+      "name": "YOLO (YOLOv8)",
+      "rating": 7,
+      "description": "Advanced proficiency with practical experience in testing models in a research role and specific mention of YOLOv8 in an internship, indicating hands-on application in computer vision tasks."
+    },
+    {
+      "name": "Llama2",
+      "rating": 8,
+      "description": "Advanced proficiency demonstrated by utilizing Llama2 with Faiss vectorDB for a RAG system (chat-genie-inference) and as part of an ongoing document question and answering system project, showing practical LLM application."
+    },
+    {
+      "name": "Faiss vectorDB",
+      "rating": 7,
+      "description": "Advanced proficiency through its direct application with Llama2 to create a document-based RAG system, indicating hands-on experience with vector databases for efficient information retrieval."
+    },
+    {
+      "name": "ONNX",
+      "rating": 5,
+      "description": "Intermediate proficiency, having gained hands-on experience, implying practical exposure but specific complex usage details are not provided."
+    },
+    {
+      "name": "BERT",
+      "rating": 7,
+      "description": "Advanced proficiency with hands-on experience in Aizenit and direct application in a project to enhance a Question and Answer database, indicating practical use of transformer models."
+    },
+    {
+      "name": "Transformers",
+      "rating": 7,
+      "description": "Advanced proficiency from hands-on experience with Transformers, likely in the context of BERT and Llama2, indicating practical work with this important architecture in NLP."
+    },
+    {
+      "name": "Flask API",
+      "rating": 7,
+      "description": "Advanced proficiency demonstrated by gaining hands-on experience and utilizing it for a FastAPI backend in a project, indicating ability to build and integrate web APIs."
+    },
+    {
+      "name": "Ultralytics",
+      "rating": 7,
+      "description": "Advanced proficiency demonstrated by implementing a model for a specific task (table column detection and segmentation), indicating practical application of this tool or library."
+    },
+    {
+      "name": "Azure ML Studio",
+      "rating": 6,
+      "description": "Intermediate proficiency, as it was leveraged for streamlining model deployment, indicating practical use of a cloud ML platform for operational tasks."
+    },
+    {
+      "name": "Spring Boot",
+      "rating": 6,
+      "description": "Intermediate proficiency demonstrated by assisting with the backend of a full-stack web application, indicating practical experience in developing server-side logic."
+    },
+    {
+      "name": "React",
+      "rating": 7,
+      "description": "Advanced proficiency demonstrated by assisting with the frontend of a full-stack web application and using it in projects (e.g., heart disease diagnosis, document Q&A), indicating practical development skills."
+    },
+    {
+      "name": "Ant Design",
+      "rating": 6,
+      "description": "Intermediate proficiency through implementation for enhancing user interface design and experience, indicating practical application of a specific UI library."
+    },
+    {
+      "name": "RESTful APIs",
+      "rating": 7,
+      "description": "Advanced proficiency demonstrated by developing RESTful API endpoints and utilizing Postman for testing, indicating practical skills in API design and implementation."
+    },
+    {
+      "name": "Postman",
+      "rating": 7,
+      "description": "Advanced proficiency through practical use for API testing and validation, indicating competence in a crucial developer tool for backend development."
+    },
+    {
+      "name": "Android Studio",
+      "rating": 6,
+      "description": "Intermediate proficiency demonstrated by using it for thorough testing of mobile applications, implying practical experience with the IDE."
+    },
+    {
+      "name": "CNN (Convolutional Neural Networks)",
+      "rating": 8,
+      "description": "Advanced proficiency demonstrated by creating web applications for heart disease prediction and face mask classification using CNNs, indicating hands-on model development."
+    },
+    {
+      "name": "Pandas",
+      "rating": 7,
+      "description": "Advanced proficiency demonstrated by utilizing for data preprocessing, including converting images to grayscale and resizing, indicating strong data manipulation skills."
+    },
+    {
+      "name": "Keras",
+      "rating": 7,
+      "description": "Advanced proficiency demonstrated by designing a neural network with Keras in a project, indicating practical experience in deep learning model construction."
+    },
+    {
+      "name": "TensorFlow",
+      "rating": 8,
+      "description": "Advanced proficiency demonstrated by using it in a deep learning project for heart disease diagnosis and its mention as a core technology, indicating strong practical model development skills."
+    },
+    {
+      "name": "Numpy",
+      "rating": 7,
+      "description": "Advanced proficiency demonstrated by using it for saving preprocessed data, indicating strong foundational skills in numerical computing essential for ML."
+    },
+    {
+      "name": "Matplotlib",
+      "rating": 6,
+      "description": "Intermediate proficiency demonstrated by using it in a deep learning project, indicating practical experience with data visualization."
+    },
+    {
+      "name": "OpenCV",
+      "rating": 7,
+      "description": "Advanced proficiency demonstrated by using for image preprocessing tasks like converting to grayscale and resizing, indicating practical skills in computer vision libraries."
+    },
+    {
+      "name": "FastAPI",
+      "rating": 8,
+      "description": "Advanced proficiency demonstrated by integrating a neural network into a FastAPI backend, indicating strong skills in building high-performance web APIs for ML models."
+    },
+    {
+      "name": "Firebase",
+      "rating": 6,
+      "description": "Intermediate proficiency demonstrated by its use in a project, implying practical experience with backend-as-a-service functionalities like data storage or authentication."
+    },
+    {
+      "name": "JavaScript",
+      "rating": 7,
+      "description": "Advanced proficiency from assisting with a dynamic React frontend and its use in projects, indicating strong front-end development capabilities."
+    },
+    {
+      "name": "RNN-LSTM",
+      "rating": 8,
+      "description": "Advanced proficiency demonstrated by developing an RNN-LSTM architecture for stock market prediction, indicating specialized deep learning model development skills for sequential data."
+    },
+    {
+      "name": "Deep-Face / VGG-Face",
+      "rating": 7,
+      "description": "Advanced proficiency demonstrated by using these specific models for real-time face classification, indicating practical experience with advanced facial recognition techniques."
+    },
+    {
+      "name": "Word2Vec, NLTK, PorterStemmer",
+      "rating": 7,
+      "description": "Advanced proficiency demonstrated by using these NLP tools for data preprocessing (removing stopwords, stemming) and feature engineering in a fake news classification project."
+    },
+    {
+      "name": "Java",
+      "rating": 6,
+      "description": "Intermediate proficiency due to involvement with Spring Boot for backend development, suggesting practical application in enterprise contexts."
+    },
+    {
+      "name": "HTML",
+      "rating": 6,
+      "description": "Intermediate proficiency, as it's fundamental for any web application development (React frontend) and listed as a skill."
+    },
+    {
+      "name": "SQL",
+      "rating": 5,
+      "description": "Intermediate proficiency, listed as a programming language, implying a basic working knowledge for database interaction, though specific use cases are not detailed."
+    },
+    {
+      "name": "Azure",
+      "rating": 6,
+      "description": "Intermediate proficiency, specifically leveraging Azure ML Studio for model deployment, indicating practical exposure to Azure cloud services."
+    },
+    {
+      "name": "Anaconda Navigator",
+      "rating": 6,
+      "description": "Intermediate proficiency, as a standard developer tool for data science and AI/ML, indicating comfortable use of the environment."
+    },
+    {
+      "name": "Jupyter Notebook",
+      "rating": 6,
+      "description": "Intermediate proficiency, as a standard developer tool for data science and AI/ML, indicating comfortable use for interactive development."
+    },
+    {
+      "name": "Spyder",
+      "rating": 6,
+      "description": "Intermediate proficiency, as a standard developer tool for Python development, indicating comfortable use of the IDE."
+    },
+    {
+      "name": "Orange 3",
+      "rating": 5,
+      "description": "Intermediate proficiency, listed as a developer tool, suggesting familiarity with this data mining and visualization software."
+    },
+    {
+      "name": "VS Code",
+      "rating": 6,
+      "description": "Intermediate proficiency, as a standard developer tool, indicating comfortable use as an IDE."
+    },
+    {
+      "name": "NetBeans",
+      "rating": 5,
+      "description": "Intermediate proficiency, listed as a developer tool, suggesting familiarity with this IDE."
+    },
+    {
+      "name": "IntelliJ IDE",
+      "rating": 5,
+      "description": "Intermediate proficiency, listed as a developer tool, suggesting familiarity with this IDE, likely in the context of Java development."
+    },
+    {
+      "name": "Adobe Photoshop",
+      "rating": 3,
+      "description": "Novice proficiency, mentioned only in the skills list without any specific work experience or project application."
+    },
+    {
+      "name": "Google Cloud Platform",
+      "rating": 5,
+      "description": "Intermediate proficiency, listed as a developer tool, suggesting some exposure or basic understanding of the platform, but no detailed applications are provided."
+    },
+    {
+      "name": "PyTorch",
+      "rating": 5,
+      "description": "Intermediate proficiency, listed as a technology/framework, suggesting familiarity but without explicit usage details in projects or work experience, the rating remains moderate."
+    },
+    {
+      "name": "GitHub",
+      "rating": 7,
+      "description": "Advanced proficiency, as it's the primary platform for Git-based version control and collaboration, essential for a developer with multiple projects and team experience."
+    }
+  ],
+  "experience": [
+    {
+      "title": "AI/ML Engineer",
+      "company": "Freelancing-upwork",
+      "duration": "Dec 2023 - Present",
+      "description": "Implemented a RAG-based chatbot for gcore.com using LangChain and an OpenAI API, allowing users to get step-by-step answers to questions. Developed workflows for vid2vid, txt2img, and txt2vid using Generative AI techniques with ComfyUI. Gained experience working with SDXL Lightning and SD1.5, as well as Huggingface models. Acquired Depth image, Edge detection, and skeleton detection using HuggingFace open-source models. Utilized Linux server as a working environment and Git for version control systems."
+    },
+    {
+      "title": "Computer Vision Research Engineer",
+      "company": "Valosens - Flix11 (Pvt) Ltd",
+      "duration": "Jan 2024 - May 2024",
+      "description": "Obtained experience with LiDAR depth maps and generated depth images datasets. Generated point clouds using depth images, and created a dataset for an ML model to test human skeleton with subtracted point clouds. Performed tests with TensorFlow Lite and YOLO models. Used Linux server and Raspberry Pi for development."
+    },
+    {
+      "title": "Intern AI/ML Engineer",
+      "company": "Aizenit (Pvt) Ltd",
+      "duration": "Nov 2023 – Jan 2024",
+      "description": "Utilized Llama2 and Faiss vectorDB to create a document-based RAG system named chat-genie-inference. Gained hands-on experience with ONNX, BERT, YOLOv8, Transformers, and Flask API. Implemented a model by Ultralytics for table column detection and segmentation to facilitate data generation for LLMs. Collaborated with team members using Git for version control and leveraged Azure ML studio to streamline model deployment."
+    },
+    {
+      "title": "Software Engineer Intern",
+      "company": "Entgra (Pvt) Ltd",
+      "duration": "Feb 2023 - Aug 2023",
+      "description": "Assisted with full-stack web application development, leveraging Spring Boot for the backend and React for a dynamic frontend. Implemented Ant Design for the frontend, enhancing user interface design and user experience. Developed RESTful API endpoints for HTTP operations and utilized Postman for API testing and validation. Demonstrated expertise in metadata handling, allowing users to view and manipulate data with precision. Proficient with Android Studio for thorough testing of mobile applications. Collaborated with team members using version control systems such as Git to organize modifications and assign tasks."
+    }
+  ],
+  "total_experience": {
+    "years": "3 years 1 month",
+    "description": "Nishan Sangeeth has accumulated 3 years and 1 month of professional experience, with a primary focus on AI/ML Engineering, Computer Vision, and Software Development. He has worked on a diverse range of projects including RAG-based chatbots, generative AI workflows, and deep learning applications, demonstrating a strong ability to learn and apply new technologies."
+  },
+  "education": [
+    {
+      "degree": "Bachelor of Computing",
+      "institution": "Wrexham Glyndwr University",
+      "year": "2024"
+    },
+    {
+      "degree": "Information Technology Diplomate",
+      "institution": "Institute of Technology University of Moratuwa | ITUM",
+      "year": "2023"
+    }
+  ],
+  "certifications": [
+    "Generative AI and LLMs: Architecture and Data Preparation",
+    "Deploy containers by using Azure Kubernetes Service",
+    "Neural Networks and Deep Learning",
+    "Supervised Machine Learning: Regression and Classification",
+    "Python for Beginners",
+    "Scrum foundation professional"
+  ],
+  "other_qualifications": "Nishan Sangeeth is an enthusiastic Information Technology professional with interests spanning Full-stack development, Artificial Intelligence, Generative AI, Deep Learning, Machine Learning, Computer Vision, Data Science, Software Engineering, Robotics, and Internet of Things. He is proficient in Sinhala and English, and possesses soft skills such as problem-solving, teamwork, leadership, adaptability, fast learning ability, collaboration, and flexibility. He has been involved with several university societies including Computer society (ITUM), Rotaract club of UOM, Gavel club of ITUM, and Robotics club of ITUM.",
+  "projects": [
+    {
+      "name": "Diagnosis Of Heart Patients Using Deep Neural Network",
+      "description": "Created web applications using CNN, Python, FastAPI, and React to predict whether a person has heart disease. Processed user-inputted information in the back-end of the app to return a subtotal prediction based on the ECG Image input. Utilized a comprehensive ECG image dataset with Pandas and OpenCV to convert images to grayscale, resize, and save as NumPy arrays for data preprocessing. Designed a neural network with sigmoid activation and integrated it into a FastAPI backend, gaining skills in deep learning and full-stack development."
+    },
+    {
+      "name": "Document Question & Answering System",
+      "description": "An ongoing project utilizing RAG with the Llama2 model to develop a document question and answering website."
+    },
+    {
+      "name": "Face-mask-classification",
+      "description": "Utilizing Convolutional Neural Networks (CNNs) to swiftly and accurately identify mask-wearing individuals. Created a model achieving over 90% accuracy."
+    },
+    {
+      "name": "Face-mask-classification-using-TransferLearning",
+      "description": "Employing transfer learning with the MobileNetV2 model, the model achieved remarkable accuracy, surpassing 92%."
+    },
+    {
+      "name": "Stock-market-value-prediction-LSTM",
+      "description": "Developing an RNN-LSTM Architecture with Python to forecast future market opening values and actionable insights."
+    },
+    {
+      "name": "Question-and-Answering-system",
+      "description": "Implemented a state-of-the-art BERT Transformer model to enhance a Question and Answer database by automating answer generation. Trained the model to provide accurate responses to user queries."
+    },
+    {
+      "name": "Face-classification",
+      "description": "Classification using Deep-Face. The VGG-Face model provides users with an easy-to-use interface for classifying images and individuals. Deployed for real-time classification and continuously improved for better results."
+    },
+    {
+      "name": "Fake-News-Classification",
+      "description": "Enhanced using LSTM and one-hot encoding. Preprocessed data with NLTK by removing stopwords and applying Porter stemming. The model achieves a strong 91% accuracy in distinguishing between fake and genuine news."
+    }
+  ],
+  "is_valid_resume": true
+}
