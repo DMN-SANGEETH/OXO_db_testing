@@ -2,6 +2,10 @@ from typing import Any, Dict, List
 import psycopg2
 import json
 from psycopg2.extras import Json
+from embeddings import EmbeddingGenerator
+
+# Initialize the embedding generator
+embedding_generator = EmbeddingGenerator()
 
 def safe_get(data: Dict[str, Any], key: str, default: Any = None) -> Any:
     """Safely get value from dictionary, handling None values"""
@@ -57,7 +61,7 @@ def insert_resume_data(resume_json):
         )
         
         with conn.cursor() as cursor:
-            # Insert user if user_id is provided
+            # Insert user if provided
             user_id = safe_get(resume_json, 'user_id')
             if user_id:
                 cursor.execute("""
@@ -66,8 +70,8 @@ def insert_resume_data(resume_json):
                     ON CONFLICT (user_id) DO NOTHING
                 """, (user_id,))
                 print(f"✓ User {user_id} processed")
-            
-            # Insert main resume data (without summary since it's in a separate table)
+
+            # Insert resume
             cursor.execute("""
                 INSERT INTO resumes (
                     user_id, first_name, last_name, full_name, email, 
@@ -79,7 +83,7 @@ def insert_resume_data(resume_json):
                 user_id,
                 safe_get(resume_json, 'first_name'),
                 safe_get(resume_json, 'last_name'),
-                safe_get(resume_json, 'name'),  # Using 'name' as full_name
+                safe_get(resume_json, 'name'),
                 safe_get(resume_json, 'email'),
                 safe_get(resume_json, 'phone'),
                 safe_get(resume_json, 'linkedin_url'),
@@ -91,8 +95,8 @@ def insert_resume_data(resume_json):
             
             resume_id = cursor.fetchone()[0]
             print(f"✓ Resume created with ID: {resume_id}")
-            
-            # Insert summary if exists and has content
+
+            # Insert summary
             summary = safe_get(resume_json, 'summary', {})
             if summary and safe_get(summary, 'text'):
                 cursor.execute("""
@@ -104,39 +108,78 @@ def insert_resume_data(resume_json):
                     safe_get(summary, 'embedding')
                 ))
                 print(f"✓ Summary added for resume {resume_id}")
-            
-            # Insert skills if exists and has content
-            skills = safe_get(resume_json, 'skills', {})
-            if skills and safe_get(skills, 'text'):
-                skills_list = safe_get(skills, 'text', [])
-                
-                if skills_list:
-                    # Get or create skills and get their IDs
-                    skill_ids = get_or_create_skills(cursor, skills_list)
-                    print(f"✓ Processed {len(skill_ids)} skills for resume {resume_id}")
+
+            # Process skills - combined skills list
+            skills_combined = safe_get(resume_json, 'skills_combined', {})
+            if skills_combined and safe_get(skills_combined, 'text'):
+                cursor.execute("""
+                    INSERT INTO resume_skills_combined (resume_id, skills_list, embedding)
+                    VALUES (%s, %s, %s)
+                """, (
+                    resume_id,
+                    Json(safe_get(skills_combined, 'text', [])),
+                    safe_get(skills_combined, 'embedding')
+                ))
+                print(f"✓ Added combined skills list for resume {resume_id}")
+
+            # Process individual skills for resume_skills_persona
+            skills_data = safe_get(resume_json, 'skills', [])
+            if skills_data:
+                for skill_item in skills_data:
+                    if not skill_item or not safe_get(skill_item, 'name'):
+                        continue
                     
-                    # Insert into resume_skills table
-                    for skill_id in skill_ids:
+                    skill_name = safe_get(skill_item, 'name')
+                    rating = safe_get(skill_item, 'rating')
+                    description = safe_get(skill_item, 'description')
+                    embedding_name = safe_get(skill_item, 'embedding_name')
+                    embedding_description = safe_get(skill_item, 'embedding_description')
+
+                    # Generate embeddings if not provided
+                    # if embedding_name is None:
+                    #     embedding_name = embedding_generator.generate_embedding(skill_name)
+                    
+                    # if embedding_description is None and description:
+                    #     embedding_description = embedding_generator.generate_embedding(description)
+
+                    # Check if skill exists, if not create it
+                    cursor.execute("SELECT skill_id FROM skills WHERE skill = %s", (skill_name,))
+                    skill_result = cursor.fetchone()
+                    
+                    if skill_result:
+                        skill_id = skill_result[0]
+                    else:
+                        # Insert new skill
                         cursor.execute("""
-                            INSERT INTO resume_skills (resume_id, skill_id, skill, embedding)
-                            VALUES (%s, %s, %s, %s)
-                            ON CONFLICT (resume_id, skill_id) DO UPDATE 
-                            SET embedding = EXCLUDED.embedding,
-                                skill = EXCLUDED.skill
-                        """, (
-                            resume_id,
-                            skill_id,
-                            Json(skills_list),  # Store the original skills list as JSON
-                            safe_get(skills, 'embedding')  # Using the same embedding for all skills
-                        ))
-                    print(f"✓ Added {len(skill_ids)} skills to resume_skills for resume {resume_id}")
-            
-            # Insert experience if exists and has content
+                            INSERT INTO skills (skill) VALUES (%s) RETURNING skill_id
+                        """, (skill_name,))
+                        skill_id = cursor.fetchone()[0]
+                        print(f"✓ Created new skill: {skill_name} (ID: {skill_id})")
+
+                    # Insert into resume_skills_persona
+                    cursor.execute("""
+                        INSERT INTO resume_skills_persona (
+                            resume_id, skill_id, skill, embedding_name, 
+                            rating, description, embedding_description
+                        ) VALUES (%s, %s, %s, %s, %s, %s, %s)
+                    """, (
+                        resume_id,
+                        skill_id,
+                        skill_name,
+                        embedding_name,
+                        rating,
+                        description,
+                        embedding_description
+                    ))
+
+                print(f"✓ Processed {len(skills_data)} individual skills for resume {resume_id}")
+
+            # Insert experience
             experience = safe_get(resume_json, 'experience', [])
             if experience:
                 exp_count = 0
                 for exp in experience:
-                    if exp:  # Check if experience entry is not empty
+                    if exp:
                         cursor.execute("""
                             INSERT INTO resume_experience (
                                 resume_id, title, company, description, embedding
@@ -151,7 +194,7 @@ def insert_resume_data(resume_json):
                         exp_count += 1
                 print(f"✓ Added {exp_count} experiences for resume {resume_id}")
 
-            # Insert total experience if exists
+            # Insert total experience
             total_experience = safe_get(resume_json, 'total_experience', {})
             if total_experience and safe_get(total_experience, 'years'):
                 cursor.execute("""
@@ -165,12 +208,12 @@ def insert_resume_data(resume_json):
                 ))
                 print(f"✓ Added total experience for resume {resume_id}")
 
-            # Insert education if exists and has content
+            # Insert education
             education = safe_get(resume_json, 'education', [])
             if education:
                 edu_count = 0
                 for edu in education:
-                    if edu:  # Check if education entry is not empty
+                    if edu:
                         cursor.execute("""
                             INSERT INTO resume_education (
                                 resume_id, degree, institution, description, embedding
@@ -184,26 +227,85 @@ def insert_resume_data(resume_json):
                         ))
                         edu_count += 1
                 print(f"✓ Added {edu_count} education entries for resume {resume_id}")
-            
-            # Insert certifications if exists and has content
-            certifications = safe_get(resume_json, 'certifications', {})
-            if certifications and safe_get(certifications, 'text'):
+
+            # Process certifications - combined certifications
+            certifications_combined = safe_get(resume_json, 'certifications_combined', {})
+            if certifications_combined and safe_get(certifications_combined, 'text'):
                 cursor.execute("""
-                    INSERT INTO resume_certifications (resume_id, certification, embedding)
+                    INSERT INTO resume_certifications_combined (resume_id, certifications_list, embedding)
                     VALUES (%s, %s, %s)
                 """, (
                     resume_id,
-                    Json(safe_get(certifications, 'text', [])),
-                    safe_get(certifications, 'embedding')
+                    Json(safe_get(certifications_combined, 'text', [])),
+                    safe_get(certifications_combined, 'embedding')
                 ))
-                print(f"✓ Added certifications for resume {resume_id}")
-            
-            # Insert projects if exists and has content
+                print(f"✓ Added combined certifications for resume {resume_id}")
+
+            # Process individual certifications
+            certifications = safe_get(resume_json, 'certifications', [])
+            if certifications:
+                cert_count = 0
+                for cert in certifications:
+                    if not cert:
+                        continue
+                    
+                    if isinstance(cert, dict):
+                        # Object certification
+                        cursor.execute("""
+                            INSERT INTO resume_certifications (
+                                resume_id, name, issuer, year, embedding
+                            ) VALUES (%s, %s, %s, %s, %s)
+                        """, (
+                            resume_id,
+                            safe_get(cert, 'name'),
+                            safe_get(cert, 'issuer', ''),
+                            safe_get(cert, 'year', ''),
+                            safe_get(cert, 'embedding')
+                        ))
+                    else:
+                        # String certification
+                        cursor.execute("""
+                            INSERT INTO resume_certifications (
+                                resume_id, name, embedding
+                            ) VALUES (%s, %s, %s)
+                        """, (
+                            resume_id,
+                            str(cert),
+                            embedding_generator.generate_embedding(str(cert))
+                        ))
+                    cert_count += 1
+                print(f"✓ Added {cert_count} individual certifications for resume {resume_id}")
+
+            # Insert other qualifications
+            other_qualifications = safe_get(resume_json, 'other_qualifications', [])
+            if other_qualifications:
+                qual_count = 0
+                for qual in other_qualifications:
+                    if qual and safe_get(qual, 'name'):
+                        # Determine type based on content (education or certification)
+                        qual_type = 'certification'  # default
+                        if any(edu_keyword in qual['name'].lower() for edu_keyword in ['bachelor', 'master', 'phd', 'degree', 'diploma', 'certificate']):
+                            qual_type = 'education'
+                        
+                        cursor.execute("""
+                            INSERT INTO resume_other_qualifications (
+                                resume_id, name, type, embedding
+                            ) VALUES (%s, %s, %s, %s)
+                        """, (
+                            resume_id,
+                            safe_get(qual, 'name'),
+                            qual_type,
+                            safe_get(qual, 'embedding')
+                        ))
+                        qual_count += 1
+                print(f"✓ Added {qual_count} other qualifications for resume {resume_id}")
+
+            # Insert projects
             projects = safe_get(resume_json, 'projects', [])
             if projects:
                 project_count = 0
                 for project in projects:
-                    if project:  # Check if project entry is not empty
+                    if project:
                         cursor.execute("""
                             INSERT INTO resume_projects (
                                 resume_id, name, description, year, embedding
@@ -220,7 +322,7 @@ def insert_resume_data(resume_json):
             
             conn.commit()
             print(f"✓ Resume data inserted successfully with ID: {resume_id}")
-            return True
+            return resume_id
             
     except psycopg2.Error as e:
         print(f"Error inserting resume data: {e}")

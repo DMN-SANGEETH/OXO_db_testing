@@ -72,12 +72,11 @@ try:
                 created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
             )
             """),
-            ("resume_skills", """
-            CREATE TABLE IF NOT EXISTS resume_skills (
+            ("resume_skills_combined", """
+            CREATE TABLE IF NOT EXISTS resume_skills_combined (
                 id SERIAL PRIMARY KEY,
                 resume_id INTEGER REFERENCES resumes(id) ON DELETE CASCADE,
-                skill_id INTEGER REFERENCES skills(skill_id) ON DELETE CASCADE,
-                skill JSONB,
+                skills_list JSONB,
                 embedding vector(768),
                 created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
             )
@@ -88,7 +87,10 @@ try:
                 resume_id INTEGER REFERENCES resumes(id) ON DELETE CASCADE,
                 skill_id INTEGER REFERENCES skills(skill_id) ON DELETE CASCADE,
                 skill TEXT,
+                embedding_name vector(768),
                 rating NUMERIC(5,2) CHECK (rating >= 0 AND rating <= 100),
+                description TEXT,
+                embedding_description vector(768),
                 created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
             )
             """),
@@ -124,11 +126,32 @@ try:
                 created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
             )
             """),
+            ("resume_certifications_combined", """
+            CREATE TABLE IF NOT EXISTS resume_certifications_combined (
+                id SERIAL PRIMARY KEY,
+                resume_id INTEGER REFERENCES resumes(id) ON DELETE CASCADE,
+                certifications_list JSONB,
+                embedding vector(768),
+                created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+            )
+            """),
             ("resume_certifications", """
             CREATE TABLE IF NOT EXISTS resume_certifications (
                 id SERIAL PRIMARY KEY,
                 resume_id INTEGER REFERENCES resumes(id) ON DELETE CASCADE,
-                certification JSONB,
+                name VARCHAR(255),
+                issuer VARCHAR(255),
+                year VARCHAR(50),
+                embedding vector(768),
+                created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+            )
+            """),
+            ("resume_other_qualifications", """
+            CREATE TABLE IF NOT EXISTS resume_other_qualifications (
+                id SERIAL PRIMARY KEY,
+                resume_id INTEGER REFERENCES resumes(id) ON DELETE CASCADE,
+                name VARCHAR(255),
+                type VARCHAR(50), -- 'education' or 'certification'
                 embedding vector(768),
                 created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
             )

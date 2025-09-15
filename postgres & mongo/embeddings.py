@@ -10,13 +10,15 @@ class EmbeddingGenerator:
         self.model = genai.embed_content
         
     def generate_embedding(self, text: str, task_type: str = "retrieval_document") -> Optional[List[float]]:
-        """Generate Embedding for given text using gemini model"""
+        """Generate Embedding for given text using gemini model
+        
+                # model="models/embedding-001","""
         try:
             if text is None or not text.strip():
                 return None
                 
             result = self.model(
-                model="models/embedding-001",
+                model="models/text-embedding-004",
                 content=text,
                 task_type=task_type
             )
@@ -123,15 +125,20 @@ class EmbeddingGenerator:
             }
             
             # Process experience
-            skills = ""
+            skill_name = ""
             for ski in resume_data.get("skills", []):
                 if isinstance(ski, dict):
                     name = get_clean_text(ski.get("name"))
-                    rating = get_clean_text(ski.get("rating"))
+                    skill_name += f"{name}"
+            sections["skill_name"] = skill_name
+            
+             # Process experience
+            skill_description = ""
+            for ski in resume_data.get("skills", []):
+                if isinstance(ski, dict):
                     description = get_clean_text(ski.get("description"))
-                    sub_skills = get_clean_text(ski.get("sub_skills"))
-                    skills += f"{name} rate for {rating}. {description} and {sub_skills}"
-            sections["skills"] = skills
+                    skill_description += f"{description}"
+            sections["skill_description"] = skill_description
             
             # Process experience
             experience_text = ""
@@ -184,7 +191,7 @@ class EmbeddingGenerator:
             combined_text = f"""
             Name: {get_clean_text(resume_data.get('name'))}
             Summary: {sections['summary']}
-            Skills: {sections['skills']}
+            Skills: {sections['skill_name']} {sections['skill_description']} 
             Total Experience: {sections['total_experience']}
             Experience: {sections['experience']}
             Education: {sections['education']}
